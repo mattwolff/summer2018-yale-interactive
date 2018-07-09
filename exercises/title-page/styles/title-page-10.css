@@ -1,0 +1,22 @@
+body {
+  background: rgb(255, 255, 255);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-bottom: 100000px;
+}
+
+#container {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#table-of-contents {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+
+}
+
+li {
+  list-style-type: none;
+}
