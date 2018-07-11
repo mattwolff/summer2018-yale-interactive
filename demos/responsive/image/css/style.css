@@ -5,26 +5,11 @@ body, html {
 
 img {
   width: 100vw;
+  display: none;
 }
 
 #one {
 	display: block;
-}
-
-#two {
-	display: none;
-}
-
-#three {
-	display: none;
-}
-
-#four {
-	display: none;
-}
-
-#five {
-	display: none;
 }
 
 @media screen and (max-width: 1024px) {
