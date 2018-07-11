@@ -1,0 +1,79 @@
+body {
+  background: rgb(255, 255, 255);
+  font-family: 'EB Garamond', serif;
+
+  font-size: 13px;
+}
+
+* {
+  font-weight: normal;
+}
+
+#container {
+  max-width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  line-height: .9;
+  letter-spacing: -.005em;
+  font-kerning: auto;
+  font-size: 60px;
+  margin: 0;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  right: 0;
+
+}
+
+h2 {
+  font-size: 40px;
+  position: absolute;
+  bottom: 33.3333%;
+  left: 0;
+  right: 0;
+}
+
+.publisher {
+  position: absolute;
+  bottom: 3em;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+  letter-spacing: .075em;
+}
+
+.publisher li {
+  display: block;
+}
+
+/*
+  Table of Contents
+  ------------------------ */
+
+#table-of-contents {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  max-width: 4em;
+  font-size: 16px;
+  font-family: sans-serif;
+
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+}
+
+#table-of-contents a {
+  color: initial;
+  text-decoration: none;
+}
