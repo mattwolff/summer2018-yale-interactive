@@ -1,0 +1,39 @@
+body {
+  background: black;
+}
+
+div {
+  display: inline-block;
+}
+
+#circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  vertical-align: middle;
+
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  background: yellow;
+  filter: blur(20px);
+}
+
+#line {
+  width: 500px;
+  height: 1px;
+  background: orange;
+  transform: rotate(-25deg);
+  float: right;
+}
+
+#dot {
+  width: 1px;
+  height: 1px;
+  background: blue;
+  position: fixed;
+  bottom: 400px;
+  left: 500px;
+}

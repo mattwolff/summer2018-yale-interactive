@@ -1,0 +1,26 @@
+body {
+}
+
+div {
+  display: inline-block;
+}
+
+#circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: black;
+}
+
+#line {
+  width: 500px;
+  height: 1px;
+  background: black;
+}
+
+#dot {
+  width: 1px;
+  height: 1px;
+  background: black;
+
+}
