@@ -1,0 +1,178 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Introduction to Interactive Design: World Wide Web: Home</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="/assets/images/dot.png">
+  <style>
+body, html {
+  background: white;
+  font-family: sans-serif, monospace;
+  font-weight: normal;
+  font-size: 16px;
+  word-spacing: -.0625em;
+  letter-spacing: .0125em;
+  -webkit-text-stroke: .5px black;
+  color: black;
+  cursor: default;
+  line-height: 1.215;
+}
+
+body {
+  height: 100%;
+  margin: 8px;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+::selection {
+  background: red;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  border-bottom: 1px solid black;
+}
+
+p {
+  margin: 0;
+  padding-bottom: 1em;
+  background: white;
+}
+
+ul, pre {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  font-size: inherit;
+}
+
+blockquote {
+  margin: 0;
+  margin-left: 4em;
+  font-style: italic;
+}
+
+hr {
+  height: 1px;
+  background: black;
+  border: none;
+  margin: 1em 0;
+}
+
+button:focus {
+  outline:0;
+}
+
+code, pre {
+  background: #f1f1f1;
+  padding: 0 .25em;
+  border-radius: .125em;
+}
+
+/* LAYOUT */
+
+header {
+  width: 100%;
+  /* font-size: 0; */
+}
+
+.title, .class-info, .menu {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1rem;
+}
+
+.title {
+  width: 66.66667%;
+}
+
+.class-info, .menu {
+  width: 16.66667%;
+}
+
+.col-4 {
+  max-width: 66.66667%;
+  margin: 0 auto;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="site-container clearfix">
+    <header class="clearfix">
+      <div class="title col-3">
+        <a href="http://summer2018-yale.matt-wolff.com">Introduction to Interactive Design: World Wide Web</a>
+      </div>
+      <nav class="menu col-1 right">
+        <ul>
+          <li>
+            <a href="http://summer2018-yale.matt-wolff.com/overview">Overview</a>
+          </li>
+          <li>
+            <a href="http://summer2018-yale.matt-wolff.com/calendar">Calendar</a>
+          </li>
+          <li>
+            <a href="http://summer2018-yale.matt-wolff.com/assignments">Assignments</a>
+          </li>
+          <li>
+            <a href="http://summer2018-yale.matt-wolff.com/resources">Resources</a>
+          </li>
+          <li>
+            <a href="http://summer2018-yale.matt-wolff.com/library">Library</a>
+          </li>
+          <li>
+            <a href="http://summer2018-yale.matt-wolff.com/people">People</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="class-info col-1 right">
+        <ul>
+          <li>ART S167 01 (30012)</li>
+          <li>Jul 2 – Aug 3, 2018</li>
+          <li>Mon, Wed	1 – 4:30pm</li>
+          <li>Green Hall Room 210</li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="col-4 offset-1">
+      <p>Welcome to the World Wide Web. In this summer intensive studio course, students create work within and around the web browser to explore the World Wide Web (WWW). In particular, this course focuses on the impact of the WWW on art, design, and communication. Students will learn some of the foundational languages of front-end web development, HTML, CSS, and JavaScript, in order to develop their own unique graphic forms and interactions. This is first and foremost a course on the communication and transmission of information. Special attention will be paid to content, navigation, pacing, interface, and interaction. No prior experience in programming is required.</p>
+      <p>This website will be updated frequently with assignments, news, links, resources, etc.</p>
+      <hr>
+      <h1>Git Commands</h1>
+      <p>
+        <code>git add .</code><br>
+        <code>git commit -m "your message here"</code><br>
+        <code>git push</code>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
