@@ -1,0 +1,19 @@
+/* FRAME */
+
+body {
+	background: black;
+}
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: white;
+	position: relative;
+}
+
+/* DRAWING ONE */
+
+.object {
+	position: absolute;
+}
