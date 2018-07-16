@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>JS Exercise 1</title>
+   <meta charset="utf-8">
+ </head>
+
+ <body>
+   <h1 class="special">Big Header</h1>
+   <p id="ISBN-978">THIS ONE</p>
+   <p>
+     Not this one
+   </p>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+   <script type="text/javascript">
+
+   $(document).ready(function(){
+    console.log("hello jQuery");
+    $('h1').click(function() {
+      $('body').css('background', 'red');
+    });
+
+
+   });
+
+   </script>
+ </body>
+</html>

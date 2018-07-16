@@ -4,8 +4,7 @@
     <meta charset="utf-8" />
     <title>Matt's Class Website</title>
     <link rel="icon" type="image/png" href="favicon.png">
-    <style>
-    </style>
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <h1>Matt's Class Website</h1>
@@ -34,5 +33,25 @@
       <a href="https://achung695.github.io/summer2018-yale-interactive/" class="next">Next</a>
     </div>
 
+    <div class="object" id="tomato">
+			<div id="stems">
+				<div class="stem-a"></div>
+				<div class="stem-b"></div>
+				<div class="stem-c"></div>
+			</div>
+		</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  console.log("hello?");
+  $("#tomato").click(function(){
+    $("body").css("color", "red");
+    $("a").css("color", "green");
+    $("#tomato").css("zoom", "2");
+  });
+  // $("body").css("background", "lime");
+});
+</script>
   </body>
 </html>

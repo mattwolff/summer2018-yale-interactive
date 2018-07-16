@@ -1,0 +1,49 @@
+body {
+
+}
+
+/*
+	Tomato
+	------------ */
+
+#tomato {
+	position: fixed;
+	width: 100px;
+	height: 80px;
+	background: red;
+	border-radius: 48%;
+	right: 20px;
+	bottom: 20px;
+	transform: rotate(-3deg);
+	cursor: pointer;
+}
+
+#tomato #stems {
+	position: absolute;
+	top: -8px;
+	width: 80px;
+	left: calc(50%);
+}
+
+#stems .stem-a, .stem-b, .stem-c {
+	background: green;
+	display: inline-block;
+}
+
+#stems .stem-a {
+	width: 3px;
+	height: 18px;
+	transform: rotate(-12deg);
+}
+
+#stems .stem-b {
+	width: 3px;
+	height: 22px;
+	transform: rotate(-2deg);
+}
+
+#stems .stem-c {
+	width: 3px;
+	height: 16px;
+	transform: rotate(9deg);
+}
