@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Turning on the Lights</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body {
+    margin: 16px;
+  }
+
+  * {
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  .dayTime {
+    background: skyblue;
+    color: forestgreen;
+  }
+
+  .nightTime {
+    background: black;
+    color: yellow;
+  }
+
+  .dayTime .eyes {
+    display: none;
+  }
+
+  #lightSwitch {
+    position: fixed;
+    top: 16px;
+    right: 24px;
+    width: 60px;
+    height: 90px;
+    background: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,.125);
+    transition: all .3s ease;
+    cursor: pointer;
+  }
+  #lightSwitch:hover {
+    box-shadow: 0 0 18px rgba(0,0,0,.25);
+  }
+
+  .eyes {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+  .leftEye, .rightEye {
+    display: inline-block;
+    background: red;
+    width: 8px;
+    height: 6px;
+    border-radius: 50%;
+    animation: glow 5s infinite;
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow:  0 0 0px rgba(255, 0, 0, 0);
+    }
+
+    50% {
+      box-shadow:  0 0 24px rgba(255, 0, 0, 1);
+    }
+
+    100% {
+      box-shadow:  0 0 0px rgba(255, 0, 0, 0);
+    }
+  }
+  </style>
+</head>
+
+<body class="dayTime">
+
+  <h1>Hello World</h1>
+  <div id="lightSwitch"></div>
+  <div class="eyes">
+    <div class="leftEye"></div>
+    <div class="rightEye"></div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+
+  var status = "ON";
+  $("#lightSwitch").click(function(){
+    if (status == "OFF") {
+      console.log(status);
+      $("body").toggleClass("dayTime");
+      $("body").toggleClass("nightTime");
+      status = "ON";
+    } else {
+      $("body").toggleClass("dayTime");
+      $("body").toggleClass("nightTime");
+      console.log(status);
+      status = "OFF";
+    };
+  });
+});
+</script>
+</body>
+</html>
