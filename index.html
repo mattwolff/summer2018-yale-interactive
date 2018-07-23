@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <h1>Matt's Class Website</h1>
+    <h1 style="display:block;">Matt's Class Website</h1>
     <a href="about.html">About</a>
     <hr />
     <h2>Weekly Projects</h2>
@@ -45,10 +45,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-  console.log("hello?");
-  $("#tomato").click(function(){
-    $("body").css("color", "red");
-    $("a").css("color", "green");
+
+
+  $("h1").click(function() {
+    $(this).css("background-color", "pink");
+    // In our case, $(this) refers to the "body" selector.
   });
   // $("body").css("background", "lime");
 });

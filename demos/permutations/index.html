@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Permutation Workshop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body {
+    margin: 8px;
+  }
+  * {
+    font-family: sans-serif;
+    font-size: 6vw;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+  }
+
+  img {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+  }
+
+  </style>
+</head>
+<body>
+
+	<img id="something" src="" />
+	<h1 id="text"></h1>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		var delay = 300 //Delay in milliseconds
+    var myArray = ["alpha.png", "beta.png", "gamma.png", "delta.png"];
+    var imageContainer = document.getElementById('something'); // plain JS
+		var textContainer = $('#text'); // jQuery
+
+    function updateImage() {
+        i = Math.floor(Math.random() * myArray.length);
+        imageContainer.src = myArray[i]; //plain JS
+        console.log(i);
+    };
+
+		function updateText() {
+        i = Math.floor(Math.random() * myArray.length);
+        textContainer.html(myArray[i]); // jQuery
+        console.log(i);
+    };
+
+		setInterval(function() {
+				updateImage();
+				updateText();
+		}, delay);
+
+	});
+	</script>
+</body>
+</html>
