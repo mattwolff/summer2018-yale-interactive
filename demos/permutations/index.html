@@ -36,26 +36,27 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 	$(document).ready(function() {
-		var delay = 300 //Delay in milliseconds
-    var myArray = ["alpha.png", "beta.png", "gamma.png", "delta.png"];
+		var delay = 100 //Delay in milliseconds
+    var myImageArray = ["alpha.png", "beta.png", "gamma.png", "delta.png"];
+		var myTextArray = ["frogs", "apples", "oranges", "snails"];
     var imageContainer = document.getElementById('something'); // plain JS
 		var textContainer = $('#text'); // jQuery
 
     function updateImage() {
-        i = Math.floor(Math.random() * myArray.length);
-        imageContainer.src = myArray[i]; //plain JS
+        i = Math.floor(Math.random() * myImageArray.length);
+        imageContainer.src = myImageArray[i]; //plain JS
         console.log(i);
     };
 
 		function updateText() {
-        i = Math.floor(Math.random() * myArray.length);
-        textContainer.html(myArray[i]); // jQuery
+        i = Math.floor(Math.random() * myTextArray.length);
+        textContainer.html(myTextArray[i]); // jQuery
         console.log(i);
     };
 
 		setInterval(function() {
 				updateImage();
-				updateText();
+				// updateText();
 		}, delay);
 
 	});
