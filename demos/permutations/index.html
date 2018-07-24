@@ -23,7 +23,6 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		/* width: 100%; */
   }
 
   </style>
@@ -37,11 +36,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 	$(document).ready(function() {
-		var delay = 410 //Delay in milliseconds
+		var delay = 100 //Delay in milliseconds
 
 		// Arrays
-		var myImageArray = ["alpha.png", "beta.png", "gamma.png", "delta.png", "six.png"];
-		var myTextArray = ["frogs", "apples", "oranges", "snails", "horses", "houses", "office supplies"];
+		var myImageArray = ["alpha.png", "beta.png", "gamma.png", "delta.png"];
+		var myTextArray = ["frogs", "apples", "oranges", "snails"];
 
 		// HTML Elements
 		var imageContainer = document.getElementById('something'); // plain JS
@@ -49,12 +48,8 @@
 
 		// Function to randomly select a string from "myImageArray"
     function updateImage() {
-        // i = Math.floor(Math.random() * myImageArray.length);
-        // imageContainer.src = myImageArray[i]; //plain JS
-        // console.log("Image: " + i);
-				i = Math.floor(Math.random() * 12);
-				j = Math.floor(Math.random() * 9);
-        imageContainer.src = i + "_" + j + ".jpg"; //plain JS
+        i = Math.floor(Math.random() * myImageArray.length);
+        imageContainer.src = myImageArray[i]; //plain JS
         console.log("Image: " + i);
     };
 
@@ -65,23 +60,10 @@
         console.log("Text: " + i);
     };
 
-		var miaImageArray = ["diamonds", "rubies", "emeralds"];
-		var miaSpeedArray = ["400", "300", "2000"];
-		// Use random number for both arrays to determine image and duration onscreen
-
-		// function mia() {
-		// 	i = Math.floor(Math.random() * miaImageArray.length);
-		// 	speed = miaSpeedArray[i];
-		// 	textContainer.html(miaImageArray[i]); // jQuery
-		// 	window.setTimeout(mia, speed);
-		// };
-		// mia();
-
-
 		// Execute randomizer functions with delay
 		setInterval(function() {
 				updateImage();
-				// updateText();
+				updateText();
 		}, delay);
 
 	});
